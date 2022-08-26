@@ -1,0 +1,108 @@
+/* 
+
+Auther : Kaung Min Khant
+Title : Admin 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    border-bottom: 1px solid black;
+}
+.wapper{
+   
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-center{
+    text-align: center;
+    padding: 1%;
+}
+.footer{
+    background-color: #ff4757;
+}
+
+
+/* css for nav */
+
+.nav{
+    list-style-type: none;
+    padding: 1%;
+    margin-left: 35%;
+}
+.nav li{
+    display: inline;
+    padding: 2%;
+
+}
+.nav li a{
+    text-decoration: none;
+    color: #ff6b81; 
+}
+.nav li a:hover{
+    color: #ff4757;
+}
+.top{
+    background-color: #f1f2f6;
+}
+
+
+/* css for main */
+
+.main{
+    background-color: #F4F4F8;
+}
+
+.content{
+    width: 10%;
+    border: 1px solid ;
+    margin: 2%;
+    padding: 2%;
+    float: left;
+    background-color: #dfe4ea;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Css for admin-add page */
+
+.info{
+    padding: 5%;
+}
+
+/* Manage Admin Page */
+
+.btn{
+    background-color: rgb(113, 113, 200);
+    width: 90px;  
+    height: 30px;
+}
+.btna{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.info{
+    margin-top: 20px;
+    position: relative;
+    margin-left: 20%;
+}
+
+th, td {
+    border-style:solid;
+    border-color: #96D4D4;
+    padding: 20px;
+  }
+
+
+  table tr td a{
+    text-decoration: none;
+    padding: 1%;
+  }
