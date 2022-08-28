@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,7 @@ Route::get('/category',[PageController::class,'category']);
 Route::get('/food',[PageController::class,'food']);
 Route::get('/order',[PageController::class,'order']);
 Route::get('/category-food',[PageController::class,'categoryfood']);
+
+
+Route::get('/admin/login',[AuthController::class,'login']);
+Route::post('/admin/login',[AuthController::class,'postlogin']);
