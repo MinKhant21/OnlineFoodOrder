@@ -2,7 +2,7 @@
         <div id="container">
             <div class="logo">
                 <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                    <img src="{{ asset('imagess/logo.png') }}" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
 
@@ -20,6 +20,17 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
+                     <li >
+                        <a href="{{ url('/cart') }}">Cart</a>
+                    
+                    </li>
+                    <li >
+                        
+                       @auth
+                       <a href="{{ url('logout') }}">Logout</a>  
+                       @endauth
+                    </li>
+                    
                 </ul>
             </div>
 

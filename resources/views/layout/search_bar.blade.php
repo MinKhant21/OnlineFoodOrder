@@ -1,18 +1,20 @@
    <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
         <div class="container">
+            @guest
         <div>
-         <a herf="#" class="btn btn-lg btn-warning">SIGN UP</a>
-         <a herf="#" class="btn btn-lg btn-primary">LOGIN</a>
+            <a href="{{url('register')}}" class="btn btn-lg btn-warning">REGISTER</a>
+            <a href="{{ url('login') }}" class="btn btn-lg btn-danger">LOGIN</a>
         </div>
-           @guest
+           
                
            @endguest 
 
            @auth
-                <form action="food-search.html" method="POST">
-                <input type="search" name="search" placeholder="Search for Food.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                <form action="{{ url('food-search') }}" method="POST">
+                @csrf
+                <input type="search" name="title" placeholder="Search for Food.." required>
+                <input type="submit" name="search" value="Search" class="btn btn-primary">
             </form>
            @endauth
 

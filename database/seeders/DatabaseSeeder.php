@@ -21,13 +21,20 @@ class DatabaseSeeder extends Seeder
         'name' => 'Admin',
         'email' => "admin@a.com",
         'password' => Hash::make('password'),
+        'address' => 'Yangon',
         'role' => 'admin',
        ]);
        User::create([
         'name' => 'Kaungminkhant',
         'email' => "kmk@a.com",
         'password' => Hash::make('password'),
-       
+        'address' => 'Mandalay',
+       ]);
+       User::create([
+        'name' => 'MeMeZin',
+        'email' => "mmz@a.com",
+        'password' => Hash::make('password'),
+        'address' => 'In My Mind',
        ]);
     }
 }

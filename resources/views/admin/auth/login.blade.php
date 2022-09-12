@@ -24,6 +24,15 @@
         </div>
         <form class="p-3 mt-3" action="{{ url('/admin/login') }}" method="POST">
             @csrf
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div>
             @if(session()->has('error'))
                 <p class="text-danger " >{{ session('error') }}</p>
